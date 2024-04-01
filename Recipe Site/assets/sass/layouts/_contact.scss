@@ -1,0 +1,71 @@
+@use "../abstracts/index";
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background: none;
+}
+
+.contact-info,
+.contact-form {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+  text-align: left;
+  justify-content: left;
+  color: index.$pg-color;
+  font-size: 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: index.$pg-color;
+}
+
+.contact-form form {
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background-color: index.$pg-color;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid;
+  font-weight: bold;
+  transform: 0.4s;
+  padding: 10px 0px;
+}
+
+.contact-form button:hover {
+  background-color: $btn-hov-clr;
+  color: white;
+  border: 2px;
+  cursor: pointer;
+}
+
+.contact-form label {
+  text-align: left;
+  color: index.$pg-color;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+}
+
+.contact-info p {
+  padding: 15px;
+}

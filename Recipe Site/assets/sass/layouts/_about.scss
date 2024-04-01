@@ -1,0 +1,50 @@
+@use "../abstracts/index";
+.about {
+  width: 100%;
+  padding: 100px 0px;
+}
+.about img {
+  height: 400px;
+  width: 400px;
+  margin-left: 8rem;
+  border-radius: 20px 0 20px 0;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about h2 {
+  color: index.$pg-color;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.about h2::before,
+.about h2::after {
+  content: "";
+  height: 2px;
+  background-color: #213229;
+  display: block;
+}
+
+.about-text p {
+  color: black;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+.about-text {
+  width: 500px;
+}
